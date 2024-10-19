@@ -7,11 +7,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div>
-        <table></table>
-        <div class="class">huh</div>
-        <p>HELLO WRLD</p>
-        <p>HELLO WRLD</p>
+    <div class="parent">
+        <div class="child">Zaid</div>
+        <div class="child">Abdulla</div>
+        <div class="child">Zakir</div>
+        <div class="child">Shoaib</div>
     </div>
 </body>
+<script>
+    const store = document.querySelector('.parent');
+    const  x = 2,y = 23;
+    console.log(store.children[0].innerHTML); //*children*?
+
+    console.log(store.children[0]);
+    console.log(store.children[1]);
+    console.log(store.children[2]);
+    console.log(store.children[3]);
+
+    for (let index = 0; index < store.children.length; index++) {
+            console.log(store.children[index].innerHTML);
+    }
+
+    if(x < y) {
+    store.children[0].style.color = "green";
+    store.lastElementChild.style.padding = "20px";
+    }
+    else {
+    store.children[0].style.color = "red";
+    }
+
+    console.log(store.firstElementChild);
+    console.log(store.lastElementChild);
+
+    const child = document.querySelector('.child');
+    
+    console.log(child.parentElement);
+    console.log(child.nextSibling);
+
+</script>
+
 </html>
